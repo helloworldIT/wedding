@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jane & John</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="shortcut icon" href="assets/images/favicon/engagement-ring.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+</head>
+<body>
+    <div id="main">
+        <div id="nav">
+            <div class="nav-bar clearfix center">
+                <a href="#main">Home</a>
+                <a href="#janevsjohn">Jane & John</a>
+                <a href="#wedding-detail">Wedding</a>
+                <a href="#rsvp" class="hover-black">RSVP</a>
+            </div>
+        </div>
+
+        <div id="header" class="white-text center clearfix gray-filter-50">
+            <div class="display-middle">
+                <h1 class="jumbo">Jane & John</h1>
+                <h2>Are getting married</h2>
+                <h2><b>17.07.2017</b></h2>
+            </div>
+        </div>
+
+        <div id="content">
+            <div class="content-padding gray-filter-50 content-color">
+                <div class="about center content-width">
+                    <h1 class="content-heading-color" id="janevsjohn"><b>Jane & John</b></h1>
+                    <img src="assets/images/wedding/wedding_couple2.jpg" alt="kiss" class="gray-filter-50">
+                    <p class="about-couple"><i>You all know us. And we all know you. We are getting married lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</i></p>
+                    <p style="line-height: 4; margin: 48px 0;"><a href="#wedding-detail" class="detail-btn white-text hover-gray">Wedding Details</a></p>
+                </div>
+            </div>
+            
+            <div class="invitation">
+                <div class="display-middle center white-text">
+                    <h1 class="jumbo">You Are Invited</h1>
+                    <h2>Of course..</h2>
+                </div>
+            </div>
+            
+            <div class="content-padding gray-filter-50 content-color clearfix" id="wedding-detail">
+                <div class="wedding content-width center">
+                    <h1 class="content-heading-color"><b>THE WEDDING</b></h1>
+                    <img src="assets/images/wedding/wedding_location.jpg" alt="wedding-location" class="gray-filter-50">
+                    
+                    <div class="two-column s-col-ful">
+                        <h2>When</h2>
+                        <p>Wedding Ceremony - 2:00pm</p>
+                        <p>Reception & Dinner - 5:00pm</p>
+                    </div>
+
+                    <div class="two-column s-col-ful">
+                        <h2>Where</h2>
+                        <p>Some place, an address</p>
+                        <p>Some where, some address</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-padding content-color center reminder" id="rsvp">
+                <h1>HOPE YOU CAN MAKE IT!</h1>
+                <p>Kindly Respond By January, 2017</p>
+                <button class="rsvp-btn hover-gray js-rsvp-btn">RSVP</button>
+            </div>
+        </div>
+
+
+        <div id="footer" class="center white-text">
+            <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp">W3schools</a></p>
+        </div>
+
+        <div class="modal js-modal">
+            <div class="modal-container js-modal-container center clearfix">
+                <h1>CAN YOU COME?</h1>
+                <p>We really hope you can make it.</p>
+                <input class="input-name" type="text" placeholder="Name(s)" name="name">
+                <p>Sincerely, John & Jane</p>
+                <button class="going-btn s-full-width two-column js-going-btn" style="background-color: #4CAF50;">Going</button>
+                <button class="not-going-btn s-full-width two-column js-not-going-btn" style="background-color: #f44336;">Can't come</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const rsvpBtn = document.querySelector('.js-rsvp-btn')
+        const modal = document.querySelector('.js-modal')
+        const modalContainer = document.querySelector('.js-modal-container')
+        const goingBtn = document.querySelector('.js-going-btn')
+        const notGoingBtn = document.querySelector('.js-not-going-btn')
+
+        rsvpBtn.addEventListener('click', function(event){
+            modal.classList.add('display')
+        })
+
+        goingBtn.addEventListener('click', function(event){
+            modal.classList.remove('display')
+        })
+        
+        notGoingBtn.addEventListener('click', function(event){
+            modal.classList.remove('display')
+        })
+
+        modal.addEventListener('click', function(event){
+            modal.classList.remove('display')
+        })
+
+        modalContainer.addEventListener('click', function(event){
+            event.stopPropagation()
+        })
+
+    </script>
+</body>
+</html>

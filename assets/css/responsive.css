@@ -1,0 +1,17 @@
+@media (max-width: 739px){
+    #nav{
+        display: none;
+    }
+
+    .s-col-ful{
+        width: 100%!important;
+    }
+
+    .s-full-width{
+        width: 100%!important;
+    }
+
+    .modal-container{
+        margin: 0 10px;
+    }
+}
