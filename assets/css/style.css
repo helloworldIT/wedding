@@ -124,7 +124,7 @@ h1{
 }
 
 #header {
-    background: url(/assets/images/wedding/wedding_couple.jpg) center/cover no-repeat;
+    background: url(../images/wedding/wedding_couple.jpg) center/cover no-repeat;
     min-height: 100vh;
     position: relative;
     text-align: center;
@@ -159,7 +159,7 @@ h1{
 }
 
 #content .invitation{
-background: url(/assets/images/wedding/flowers.jpg) center/cover no-repeat;
+background: url(../images/wedding/flowers.jpg) center/cover no-repeat;
     width: 100%;
     height: 100vh;
     position: relative;
